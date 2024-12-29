@@ -83,19 +83,19 @@ This project demonstrates the implementation of a CSV analysis tool that allows 
    python app.py  
    ```
    For my Suggestion Use VS Code.
-```
 
-```
-## 🚀 How It Works  
+
+## 🚀 How It Works
 
 1.Input: User selects a vegetable and location, then enters a desired date range.
-2.Processing:
-*Data is fetched from the cloud storage bucket.
-*A machine learning model predicts prices based on the provided inputs.
-3.Output: The predicted prices are displayed along with a trend visualization.
-```
 
-```
+2.Processing:
+**Data is fetched from the cloud storage bucket.
+
+**A machine learning model predicts prices based on the provided inputs.
+
+3.Output: The predicted prices are displayed along with a trend visualization.
+
 ## 📂 Project Structure  
 
 ```
@@ -111,55 +111,51 @@ CSV-Analysis-Tool/
 ├── requirements.txt       # Dependencies  
 ├── README.md              # Documentation  
 └── LICENSE                # Project license
-```
-```
+
 
 ```
 ## 📊 Data Source  
 
 Dataset: Users can upload their own CSV files for analysis.
-Ensure your data is formatted correctly for optimal analysis.
-```
 
-```
+Ensure your data is formatted correctly for optimal analysis.
+
+
 ## 📝 Sample Inputs  
 
-- **Example Rating :**  
-  Valid IDs include 7 , 8 , 9 .  
+- **Example :**  
+  A sample CSV file can be found in the data/ directory.  
 
-- **Example Output for  8:**  
-  Recommended Movies: `Inception`, `The Dark Knight`, `Interstellar`.
-```
+- **Example Output:**  
+  The application will display various statistics and visualizations based on the uploaded data.
+  
 
-```
 ## 🎨 CSS Styling  
 
 The web application uses a minimalist and responsive design. The CSS file located in `static/styles.css` ensures seamless interaction across devices.
-```
 Which includes just Background image and interactive page.
-```
+
 ## 🌐 Live Demo  
-
-Check out the live application:  
-[Movie Recommendation System Live Demo](#)  
-(*Replace with the deployed link or keep as placeholder.*)
+Check out the live application:
+CSV Analysis Tool Live Demo
+```
+https://csv-analysis-app.streamlit.app/
 ```
 
-```
-## 🔮 Future Enhancements  
+
+## 🔮 Future Enhancements
 
 - Integration with APIs like TMDb or OMDB for real-time movie data.  
 - Advanced recommendation algorithms (e.g., matrix factorization).  
 - User authentication for saving preferences.  
 - Deployment on cloud platforms (e.g., AWS, GCP).
-```
 
-```
+
 ## 🛠️ Development  
 
 1. Fork the repository:  
    ```bash  
-   git fork https://github.com/your-username/movie-recommendation-system.git  
+   git fork https://github.com/Kondareddy1209/CSV-Analysis-Tool-with-Google-Cloud-Integration 
    ```  
 
 2. Create a new branch:  
@@ -178,26 +174,9 @@ Check out the live application:
    ```  
 
 5. Open a Pull Request.
-```
 
-```
-## ⚖️ License  
 
+## ⚖️ License
 This project is licensed under the **MIT License**.
 ```
-
-```
-###Extra Colab Source for Data Merging
-```
-https://colab.research.google.com/drive/1Qdavm3oJDefyNdCNVK_Z0yM8s-ywF5vt?usp=sharing.
-```
-
-
-
-
-
-
-```
-###
--
                                                  THANK💚YOU
