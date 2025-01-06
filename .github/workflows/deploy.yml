@@ -1,0 +1,23 @@
+name: Deploy App
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      - name: Disable file watching in Streamlit (if needed)
+        run: |
+          echo "STREAMLIT_SERVER_RUN_ON_SAVE=false" >> $GITHUB_ENV
+      - name: Run Streamlit App
+        run: |
+          streamlit run streamlit_app.py
