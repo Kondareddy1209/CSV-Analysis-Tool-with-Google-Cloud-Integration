@@ -4,3 +4,4 @@ plotly
 matplotlib
 seaborn
 google-cloud-storage
+python-dotenv
