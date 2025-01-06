@@ -1,5 +1,6 @@
-streamlit
 pandas
+streamlit
+plotly
 matplotlib
 seaborn
 google-cloud-storage
