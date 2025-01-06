@@ -1,0 +1,36 @@
+name: Google Cloud Storage Upload
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu environment
+
+    steps:
+    # Step 1: Checkout the repository code
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # Step 2: Set up Google Cloud authentication using the secret
+    - name: Set up Google Cloud credentials
+      run: |
+        # Write the secret JSON to a file
+        echo "${{ secrets.GOOGLE_CLOUD_JSON_KEY }}" > $HOME/gcloud.json
+        # Authenticate with Google Cloud using the service account credentials
+        gcloud auth activate-service-account --key-file=$HOME/gcloud.json
+      env:
+        GOOGLE_CLOUD_JSON_KEY: ${{ secrets.GOOGLE_CLOUD_JSON_KEY }}  # Reference the secret you added
+
+    # Step 3: Install dependencies (e.g., google-cloud-storage)
+    - name: Install dependencies
+      run: |
+        pip install google-cloud-storage
+
+    # Step 4: Upload file to Google Cloud Storage (you can customize this step to your needs)
+    - name: Upload file to Google Cloud Storage
+      run: |
+        # Assuming you have a Python script to upload the file
+        python upload_to_gcs.py  # This script will need to be created in the next step
