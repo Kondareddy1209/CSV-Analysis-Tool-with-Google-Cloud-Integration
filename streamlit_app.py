@@ -2,12 +2,10 @@ import os
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
-import seaborn as sns
 from google.cloud import storage
 
+# Set Google Cloud credentials from Streamlit secrets
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = st.secrets["GOOGLE_CLOUD_JSON_KEY"]
-
-
 
 # Function to upload file to Google Cloud Storage
 def upload_to_gcs(bucket_name, file):
