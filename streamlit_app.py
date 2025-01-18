@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from google.cloud import storage
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ${{secrets.GOOGLE_CLOUD_JSON_KEY}}
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = st.secrets["GOOGLE_CLOUD_JSON_KEY"]
+
 
 
 # Function to upload file to Google Cloud Storage
