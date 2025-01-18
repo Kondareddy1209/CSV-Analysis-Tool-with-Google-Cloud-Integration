@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from google.cloud import storage
 
 # Set Google Cloud credentials from Streamlit secrets
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = st.secrets["GOOGLE_CLOUD_JSON_KEY"]
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = https://github.com/Kondareddy1209/CSV-Analysis-Tool-with-Google-Cloud-Integration/blob/main/gen-lang-client-0298324082-8eef79011259.json
 
 # Function to upload file to Google Cloud Storage
 def upload_to_gcs(bucket_name, file):
