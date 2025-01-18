@@ -6,3 +6,6 @@ seaborn
 google-cloud-storage
 python-dotenv
 google-generativeai
+streamlit==1.19.0
+google-cloud==2.0.0
+
