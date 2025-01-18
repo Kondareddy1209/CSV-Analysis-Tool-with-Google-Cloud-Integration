@@ -7,4 +7,4 @@ google-cloud-storage
 python-dotenv
 google-generativeai
 streamlit==1.19.0
-google-cloud==3.0.0  # Choose either 2.0.0 or 3.0.0, not both
+google-cloud==2.19.0  # Corrected version
