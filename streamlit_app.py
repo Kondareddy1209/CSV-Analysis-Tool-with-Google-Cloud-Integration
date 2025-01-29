@@ -2,10 +2,11 @@ import os
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
+import seaborn as sns
 from google.cloud import storage
 
-# Set Google Cloud credentials from Streamlit secrets
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = st.secrets["gcp"]["credentials"]
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\Konda Reddy\Documents\GitHub\gen-lang-client-0298324082-8eef79011259.json"
+
 
 # Function to upload file to Google Cloud Storage
 def upload_to_gcs(bucket_name, file):
@@ -37,7 +38,7 @@ uploaded_file = st.file_uploader("Upload a CSV File", type=["csv"])
 
 if uploaded_file:
     # Upload file to GCS
-    bucket_name = st.secrets["gcp"]["bucket_name"]  # Access bucket name from secrets
+    bucket_name = "cropyieldprediction"  # Replace with your bucket name
     with st.spinner("Uploading to Google Cloud Storage..."):
         gcs_path = upload_to_gcs(bucket_name, uploaded_file)
         if gcs_path:
