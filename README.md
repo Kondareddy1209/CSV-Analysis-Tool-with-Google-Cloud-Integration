@@ -147,7 +147,8 @@ https://csv-analysis-app.streamlit.app/
 
 - Integration with APIs like TMDb or OMDB for real-time movie data.  
 - Advanced recommendation algorithms (e.g., matrix factorization).  
-- User authentication for saving preferences.  
+- User authentication for saving preferences.
+- 
 - Deployment on cloud platforms (e.g., AWS, GCP).
 
 
